@@ -1,0 +1,3 @@
+function clickOMatic() {
+    alert('Hello!');
+}
