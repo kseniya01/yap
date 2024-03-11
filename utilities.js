@@ -1,3 +1,5 @@
+ScrollReveal().reveal('.site');
+
 // Standard function 
 function clickOMatic() {
     alert('Hello!');
