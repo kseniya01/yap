@@ -1,5 +1,38 @@
 /* Add screen styles below */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --main-bg-color: #2c2c2c;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #dbdbdb;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 100px;
+  padding: 0;
+}
+
+.site h1 {
+  font-weight: bolder;
+  font-size: larger;
+  text-transform: uppercase;
+  padding: 50px;
+}
+
+.site h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.site h3 {
+  font-weight: 800;
+  font-size: medium;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,32 +53,22 @@ body {
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 0 4px;
-}
-
 .column img {
   margin-top: 50px;
   vertical-align: middle;
-}
-
-.img-zoom-container {
-  position: relative;
 }
 
 .img-zoom-lens {
   position: absolute;
   border: 1px solid #d4d4d4;
   /*set the size of the lens:*/
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .img-zoom-result {
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
   width: 500px;
-  height: 450px;
+  height: 500px;
 }

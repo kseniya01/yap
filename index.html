@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zen Captures</title>
+  <title>Zen Post</title>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="utilities.js"></script>
   <script>
@@ -65,37 +65,33 @@
   </script>
 </head>
 <body>
-  <main class="site">
-    <!-- Header -->
+  <!-- Header -->
   <div class="header" id="myHeader">
-    <h1>Image Grid</h1>
+    <h1>Zen Post</h1>
+    <h2>Still captures of solitude...</h2>
   </div>
   <!-- Photo Grid -->
-  <div class="row"> 
-    <div class="column">
-      <img src="kseniya.jpg" style="width:100%">
-      <img src="pc.jpg" style="width:100%">
-      <img src="seattle.jpg" style="width:100%">
-      <img src="kaia.jpg" style="width:100%">
-      <img src="huskies.jpg" style="width:100%">
-    </div>
+  <div class="column">
+    <h3>Who am I?</h3>
+    <img src="kseniya.jpg" style="max-width: 500px">
+    <h3>What am I about?</h3>
+    <img src="pc.jpg" style="max-width: 500px">
+    <h3>Where did I come from?</h3>
+    <img src="seattle.jpg" style="max-width: 500px">
+    <h3>Why do I do it?</h3>
+    <img src="kaia.jpg" style="max-width: 500px">
   </div>
-  <h1>Husky Vision!</h1>
-
-<p>Hover over the huskies to see more detail.</p>
-
-<div class="img-zoom-container">
-  <img id="HuskyCabal" src="huskies.jpg" width="500" height="450">
-  <div id="myresult" class="img-zoom-result"></div>
-</div>
-
-<p>The image must be placed inside a container with relative positioning.</p>
-
-<script>
-  // Initiate zoom effect:
-  imageZoom("HuskyCabal", "myresult");
-  </script>
-  </main>
-  
-  </body>
-  </html>
+  <!-- Image Zoom -->
+  <h2>Husky Vision</h2>
+  <p>Hover over a husky to see more detail.</p>
+  <div class="img-zoom-container">
+    <img id="HuskyCabal" src="huskies.jpg" width="500" height="450">
+    <div id="myresult" class="img-zoom-result"></div>
+  </div>
+  <p>From left to right: Kaia, Emily, Najee, and Cosmo.</p>
+  <script>
+    // Initiate zoom effect:
+    imageZoom("HuskyCabal", "myresult");
+    </script>
+</body>
+</html>
