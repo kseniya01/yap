@@ -13,7 +13,9 @@ window.onload = function() {
     });
 }
 
-ScrollReveal().reveal('.headline', {delay: 1000});
+ScrollReveal().reveal('.headline');
+ScrollReveal().reveal('.tagline', { delay: 500 });
+ScrollReveal().reveal('.punchline', { delay: 2000 });
 
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
