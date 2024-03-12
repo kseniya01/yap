@@ -1,6 +1,10 @@
-ScrollReveal().reveal('.head1', {delay: 1000});
+window.onload = function() {
+    ScrollReveal().reveal('.head1', {delay: 1000});
+}
 
-ScrollReveal().reveal('.head2', {delay: 1500});
+window.onload = function() {
+    ScrollReveal().reveal('.head2', {delay: 2000});
+}
 
 // Standard function 
 function clickOMatic() {
