@@ -60,11 +60,9 @@ body {
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1>Image Grid</h1>
-  <p>Click on the buttons to change the grid view.</p>
+  <h1>InstaZen</h1>
   <button class="btn" onclick="one()">1</button>
   <button class="btn active" onclick="two()">2</button>
-  <button class="btn" onclick="four()">4</button>
 </div>
 
 <!-- Photo Grid -->
@@ -74,7 +72,7 @@ body {
     <img src="pc.jpg" style="width:50%">
     <img src="seattle.jpg" style="width:50%">
     <img src="kaia.jpg" style="width:50%">
-    <img src="huskies.jpg" style="width:50%">
+    <img src="huskies.jpg" style="width:100%">
   </div>
 </div>
 
@@ -165,6 +163,25 @@ function moveLens(e) {
     return {x : x, y : y};
   }
 }
+
 </script>
+<h1>Husky Vision!</h1>
+  
+<p>Hover over each husky to see more.</p>
+  
+<div class="img-zoom-container">
+  <img id="myimage" src="huskies.jpg" width="500" height="400">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+  
+<p>The image must be placed inside a container with relative positioning.</p>
+<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
+<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p>
+  
+<script>
+// Initiate zoom effect:
+imageZoom("myimage", "myresult");
+</script>
+
 </body>
 </html>
