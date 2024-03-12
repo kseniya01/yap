@@ -1,6 +1,6 @@
 ScrollReveal().reveal('.site', {delay: 1000});
 
-ScrollReveal().reveal('.headline');
+ScrollReveal().reveal('.headline', {delay: 1000});
 
 ScrollReveal().reveal('.items');
 ScrollReveal().reveal('#sidebar .items', { container: '#sidebar' });
