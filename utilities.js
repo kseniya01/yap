@@ -1,5 +1,7 @@
 ScrollReveal().reveal('.site', {delay: 1000});
 
+ScrollReveal().reveal('.headline');
+
 // Standard function 
 function clickOMatic() {
     alert('Hello!');
