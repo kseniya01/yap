@@ -19,3 +19,8 @@
   width: 500px;
   height: 500px;
 }
+
+.column {
+  margin: auto;
+  align-content: center;
+}
