@@ -116,6 +116,7 @@ function one() {
 // Add active class to the current button (highlight it)
 var header = document.getElementById("myHeader");
 var btns = header.getElementsByClassName("btn");
+
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
@@ -123,6 +124,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+<div class="img-zoom-container">
+  <img id="myimage" src="img_girl.jpg" width="300" height="240" alt="Girl">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
