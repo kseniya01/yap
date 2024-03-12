@@ -13,6 +13,8 @@ window.onload = function() {
     });
 }
 
+ScrollReveal().reveal('.headline');
+
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
