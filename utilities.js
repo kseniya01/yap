@@ -1,9 +1,8 @@
-ScrollReveal().reveal('.site', {delay: 500});
+ScrollReveal().reveal('.head1', {delay: 1000});
 
-ScrollReveal().reveal('.head1', {delay: 2000});
+ScrollReveal().reveal('.head2', {delay: 1500});
 
-ScrollReveal().reveal('.items');
-ScrollReveal().reveal('#sidebar .column', { container: '#sidebar' });
+ScrollReveal().reveal('.desc', {delay: 1500});
 
 // Standard function 
 function clickOMatic() {
