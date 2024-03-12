@@ -1,18 +1,5 @@
 ScrollReveal().reveal('.site', {delay: 1000});
 
-// Standard function 
-function clickOMatic() {
-    alert('Hello!');
-};
-
-window.onload = function() {
-    const click = document.getElementById('click');
-    
-    click.addEventListener("click", (event) => {
-        clickOMatic();
-    });
-}
-
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
@@ -68,3 +55,16 @@ function imageZoom(imgID, resultID) {
       return {x : x, y : y};
     }
   };
+
+// Standard function 
+function clickOMatic() {
+    alert('Hello!');
+};
+
+window.onload = function() {
+    const click = document.getElementById('click');
+    
+    click.addEventListener("click", (event) => {
+        clickOMatic();
+    });
+}
