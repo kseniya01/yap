@@ -22,3 +22,7 @@ header h1 {
   font-size: 35px;
   padding: 50px;
 }
+
+.img-zoom-container {
+  align-content: center;
+}
