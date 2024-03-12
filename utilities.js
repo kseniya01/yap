@@ -14,9 +14,3 @@ window.onload = function() {
         clickOMatic();
     });
 };
-
-sayHi("User"); // Hello, User
-
-function sayHi(name) {
-  alert( `Hello, ${name}` );
-};
