@@ -19,6 +19,7 @@ body {
 .site h1 {
   font-weight: bolder;
   font-size: larger;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   padding: 50px;
 }
