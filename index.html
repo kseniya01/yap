@@ -1,138 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  align-content: center;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
-
-<style>
-* {box-sizing: border-box;}
-
-.img-zoom-container {
-  position: relative;
-}
-
-.img-zoom-lens {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  /*set the size of the lens:*/
-  width: 40px;
-  height: 40px;
-}
-
-.img-zoom-result {
-  border: 1px solid #d4d4d4;
-  /*set the size of the result div:*/
-  width: 300px;
-  height: 300px;
-}
-</style>
-
-</head>
-<body>
-
-<!-- Header -->
-<div class="header" id="myHeader">
-  <h1>InstaZen</h1>
-  <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="kseniya.jpg" wistyle="width:50%">
-    <img src="pc.jpg" style="width:50%">
-    <img src="seattle.jpg" style="width:50%">
-    <img src="kaia.jpg" style="width:50%">
-    <img src="huskies.jpg" style="width:50%">
-  </div>
-</div>
-
-<script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
-
-// Declare a loop variable
-var i;
-
-// Full-width images
-function one() {
-    for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
-  }
-}
-
-// Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
-
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-<div class="img-zoom-container">
-  <img id="huskycabal" src="huskies.jpg" width="300" height="240" alt="Husky Cabal"></img>
-  <div id="myresult" class="img-zoom-result"></div>
-</div>
-
-function imageZoom(imgID, resultID) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Captures</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="utilities.js"></script>
+  <script>
+    function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
   result = document.getElementById(resultID);
@@ -153,7 +28,7 @@ function imageZoom(imgID, resultID) {
   /*and also for touch screens:*/
   lens.addEventListener("touchmove", moveLens);
   img.addEventListener("touchmove", moveLens);
-function moveLens(e) {
+  function moveLens(e) {
     var pos, x, y;
     /*prevent any other actions that may occur when moving over the image:*/
     e.preventDefault();
@@ -187,24 +62,40 @@ function moveLens(e) {
     return {x : x, y : y};
   }
 }
+  </script>
+</head>
+<body>
+  <main class="site">
+    <!-- Header -->
+  <div class="header" id="myHeader">
+    <h1>Image Grid</h1>
+  </div>
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="kseniya.jpg" style="width:100%">
+      <img src="pc.jpg" style="width:100%">
+      <img src="seattle.jpg" style="width:100%">
+      <img src="kaia.jpg" style="width:100%">
+      <img src="huskies.jpg" style="width:100%">
+    </div>
+  </div>
+  <h1>Husky Vision!</h1>
 
-</script>
-<h1>Husky Vision!</h1>
-  
-<p>Hover over each husky to see more.</p>
-  
+<p>Hover over the huskies to see more detail.</p>
+
 <div class="img-zoom-container">
-  <img id="myimage" src="huskies.jpg" width="500" height="400">
+  <img id="HuskyCabal" src="huskies.jpg" width="500" height="450">
   <div id="myresult" class="img-zoom-result"></div>
 </div>
-  
-<p>The image must be placed inside a container with relative positioning.</p>
-<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
-<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p>
-  
-// Initiate zoom effect:
-imageZoom("myimage", "myresult");
-</script>
 
-</body>
-</html>
+<p>The image must be placed inside a container with relative positioning.</p>
+
+<script>
+  // Initiate zoom effect:
+  imageZoom("HuskyCabal", "myresult");
+  </script>
+  </main>
+  
+  </body>
+  </html>
