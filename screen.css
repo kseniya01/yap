@@ -1,6 +1,9 @@
-.myheader {
-  text-align: center;
-  padding: 32px;
+header.h1 {
+  margin: 0;
+  align-self: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 50px;
 }
 
 .row {
@@ -12,14 +15,6 @@
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
-
-header h1 {
-  margin: 0;
-  align-self: center;
-  font-weight: bold;
-  font-size: 35px;
-  padding: 50px;
 }
 
 body {
