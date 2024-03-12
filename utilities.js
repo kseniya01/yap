@@ -1,9 +1,5 @@
 window.onload = function() {
-    ScrollReveal().reveal('.head1', {delay: 1000});
-}
-
-window.onload = function() {
-    ScrollReveal().reveal('.head2', {delay: 2000});
+    ScrollReveal().reveal('.site', {delay: 1000});
 }
 
 // Standard function 
