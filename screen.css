@@ -9,7 +9,7 @@
   :root {
       --main-bg-color: #424242;
       --primary-text-color: #E9E9E9;
-  }
+  };
   
   body {
       background var(--main-bg-color);
@@ -17,4 +17,4 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-  }
+  };
