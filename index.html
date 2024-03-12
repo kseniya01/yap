@@ -16,16 +16,95 @@
       position: absolute;
       border: 1px solid #d4d4d4;
       /*set the size of the lens:*/
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
     
     .img-zoom-result {
       border: 1px solid #d4d4d4;
       /*set the size of the result div:*/
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --main-bg-color: #2c2c2c;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #dbdbdb;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 20px 0;
+  align-content: center;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 20px 0;
+  align-content: center;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+  margin: 0;;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: medium;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 50px;
+  vertical-align: middle;
+}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 50px;
+  height: 50px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 500px;
+  height: 500px;
+}
     </style>
   <script>
     function imageZoom(imgID, resultID) {
