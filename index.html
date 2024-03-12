@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          margin: 0;
-          font-family: Arial;
-        }
-        
-        .header {
-          text-align: center;
-          padding: 32px;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 50%;
-          padding: 10px;
-        }
-        
-        .column img {
-          margin-top: 12px;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        </style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <title>Yet Another Project</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
+<html>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 <body>
-    <main class="site">
-        <h1 class="head1">
-            You've been hit by...
-        </h1>
-        <h2 class="head2">
-            You've been struck by...
-        </h2>
-        <div class="row">
-            <section class="column">
-                <img src="kseniya.jpg" width="500" height="500">
-                <img src="pc.jpg" width="500" height="500">
-                <img src="seattle.jpg" width="500" height="500">
-                <img src="kaia.jpg" width="500" height="500">
-                <img src="huskies.jpg" width="500" height="500">
-            </section>
-        </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad, quasi
-        iusto atque odit consequuntur optio tenetur officia quidem perferendis libero
-        provident, culpa veritatis sunt expedita aliquid commodi quia tempora?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad, quasi
-        iusto atque odit consequuntur optio tenetur officia quidem perferendis libero
-        provident, culpa veritatis sunt expedita aliquid commodi quia tempora?</p>
-        <button id="click">Click Me!</button>
-    </main>
-    <script src="utilities.js"></script>
+
+<!-- Header -->
+<div class="header">
+  <h1>Image Grid</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+  <img src="/w3images/wedding.jpg" style="width:100%">
+  <img src="/w3images/rocks.jpg" style="width:100%">
+  <img src="/w3images/falls2.jpg" style="width:100%">
+  <img src="/w3images/paris.jpg" style="width:100%">
+  <img src="/w3images/nature.jpg" style="width:100%">
+  </div>  
+</div>
+
 </body>
-</html> 
+</html>
