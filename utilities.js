@@ -14,7 +14,7 @@ window.onload = function() {
 }
 
 ScrollReveal().reveal('.headline', { delay: 500 });
-ScrollReveal().reveal('.tagline', { delay: 500 });
+ScrollReveal().reveal('.tagline', { delay: 1000 });
 ScrollReveal().reveal('.punchline', { delay: 2000 });
 
 function imageZoom(imgID, resultID) {
