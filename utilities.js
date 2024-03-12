@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.header', {delay: 1000});
+ScrollReveal().reveal('.header', {delay: 3000});
 
 // Standard function 
 function clickOMatic() {
