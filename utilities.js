@@ -13,7 +13,7 @@ window.onload = function() {
     });
 }
 
-ScrollReveal().reveal('.headline');
+ScrollReveal().reveal('.headline', {delay: 1000});
 
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
