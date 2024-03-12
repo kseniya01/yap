@@ -2,8 +2,6 @@ ScrollReveal().reveal('.head1', {delay: 1000});
 
 ScrollReveal().reveal('.head2', {delay: 1500});
 
-ScrollReveal().reveal('.desc', {delay: 1500});
-
 // Standard function 
 function clickOMatic() {
     alert('Hello!');
