@@ -38,6 +38,12 @@
   --secondary-text-color: #dbdbdb;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  align-content: center;
+}
+
 body {
   background: var(--main-bg-color);
   color: var(--primary-text-color);
@@ -45,6 +51,8 @@ body {
   margin: 20px 0;
   align-content: center;
   padding: 0;
+  align-self: center;
+  align-items: center;
 }
 
 h1.headline {
@@ -54,7 +62,7 @@ h1.headline {
   text-transform: uppercase;
   text-align: center;
   padding: 50px;
-  margin: 0;
+  margin: 0;;
 }
 
 h2.tagline {
@@ -70,15 +78,11 @@ h3 {
   text-align: center;
 }
 
-p.huskyid-1 {
-  font-weight: 200;
-  font-size: 20px;
+p {
+  font-weight: 800;
+  font-size: medium;
   text-align: center;
-}
-
-p.huskyid-2 {
-  font-size: 20px;
-  text-align: center;
+  padding: 10px;
 }
 
 .row {
@@ -86,12 +90,6 @@ p.huskyid-2 {
   flex-wrap: wrap;
   padding: 0 4px;
   align-content: center;
-}
-
-.container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
 
 img {
@@ -107,31 +105,8 @@ img {
   align-items: center;
 }
 
-.img-zoom-container {
-  position: relative;
-  align-content: center;
-  flex-wrap: wrap;
-  float: auto;
-}
-
-.img-zoom-lens {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  /*set the size of the lens:*/
-  width: 50px;
-  height: 50px;
-}
-
-.img-zoom-result {
-  border: 1px solid #d4d4d4;
-  /*set the size of the result div:*/
-  width: 500px;
-  height: 500px;
-  padding: 50px;
-}
   </style>
-  
-<script>
+  <script>
   var elements = document.getElementsByClassName("column");
   
   function imageZoom(imgID, resultID) {
@@ -155,7 +130,6 @@ img {
   /*and also for touch screens:*/
     lens.addEventListener("touchmove", moveLens);
     img.addEventListener("touchmove", moveLens);
-  }
 
   function moveLens(e) {
     var pos, x, y;
@@ -191,7 +165,7 @@ img {
     y = y - window.pageYOffset;
     return {x : x, y : y};
   }
-
+  }
   </script>
 </head>
 <body>
@@ -220,9 +194,9 @@ img {
     <p class="husky-id1">Hover over a husky to see more detail.</p>
     <div class="img-zoom-container">
       <img id="myimage" src="huskies.jpg" width="500" height="600">
-      <div id="myresult" class="img-zoom-result" style="max-width: 500px"></div>
-      <p class="husky-id2">From left to right: Kaia, Emily, Najee, and Cosmo.</p>
+      <div id="myresult" class="img-zoom-result"></div>
     </div>
+    <p class="husky-id2">From left to right: Kaia, Emily, Najee, and Cosmo.</p>
   <script>
     // Initiate zoom effect:
     imageZoom("myimage", "myresult");
