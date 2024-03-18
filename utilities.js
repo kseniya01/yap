@@ -4,15 +4,19 @@ ScrollReveal({ reset: true }
 ,ScrollReveal().reveal('.headline', { delay: 500 })
 ,ScrollReveal().reveal('.tagline', { delay: 1000 })
 ,ScrollReveal().reveal('.punchline', { delay: 2000 })
-,ScrollReveal().reveal('.Who', { delay: 3000 })
-,ScrollReveal().reveal('.What', { delay: 5000 })
-,ScrollReveal().reveal('.Where', { delay: 7000 })
-,ScrollReveal().reveal('.Why', { delay: 9000 })
+,ScrollReveal().reveal('.Who', src="kseniya.jpg",{ delay: 3500 })
+,ScrollReveal().reveal('.What', { delay: 4500 })
+,ScrollReveal().reveal('.Where', { delay: 5500 })
+,ScrollReveal().reveal('.Why', { delay: 6500 })
 ,ScrollReveal().reveal('.headline2', { delay: 11000 })
 ,ScrollReveal().reveal('.husky-id1', { delay: 12000 })
-,ScrollReveal().reveal('.husky-id2', { delay: 13000 })
+,ScrollReveal().reveal('.husky-id2', { delay: 12000 })
+,ScrollReveal().reveal('img.Who', { delay: 3500
+  ,distance: '0px'
+  ,opacity: 0.8})
+);
 
-,function imageZoom(imgID, resultID) {
+function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
     result = document.getElementById(resultID);
@@ -66,4 +70,4 @@ ScrollReveal({ reset: true }
       y = y - window.pageYOffset;
       return {x : x, y : y};
     }
-  })
+  }
