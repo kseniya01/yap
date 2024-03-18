@@ -1,23 +1,18 @@
 ScrollReveal().reveal('.site', {delay: 1000});
 
-// Standard function 
-function clickOMatic() {
-    alert('Hello!');
-};
+ScrollReveal({ reset: true }
+,ScrollReveal().reveal('.headline', { delay: 500 })
+,ScrollReveal().reveal('.tagline', { delay: 1000 })
+,ScrollReveal().reveal('.punchline', { delay: 2000 })
+,ScrollReveal().reveal('.Who', { delay: 3000 })
+,ScrollReveal().reveal('.What', { delay: 5000 })
+,ScrollReveal().reveal('.Where', { delay: 7000 })
+,ScrollReveal().reveal('.Why', { delay: 9000 })
+,ScrollReveal().reveal('.headline2', { delay: 11000 })
+,ScrollReveal().reveal('.husky-id1', { delay: 12000 })
+,ScrollReveal().reveal('.husky-id2', { delay: 13000 })
 
-window.onload = function() {
-    const click = document.getElementById('click');
-    
-    click.addEventListener("click", (event) => {
-        clickOMatic();
-    });
-}
-
-ScrollReveal().reveal('.headline', { delay: 500 });
-ScrollReveal().reveal('.tagline', { delay: 1000 });
-ScrollReveal().reveal('.punchline', { delay: 2000 });
-
-function imageZoom(imgID, resultID) {
+,function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
     result = document.getElementById(resultID);
@@ -71,4 +66,4 @@ function imageZoom(imgID, resultID) {
       y = y - window.pageYOffset;
       return {x : x, y : y};
     }
-  };
+  })
